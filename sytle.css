@@ -50,16 +50,22 @@
         line-height: 1.5;
     }
 
+    p {
+        text-align: center;
+    }
+
     button {
+        position: relative;
         list-style-type: none;
         background: none;
         margin-top: 1.5px;
-        width: 500px;
-        height: 50px;
-        background-color: brown;
+        width: 200px;
+        height: 200px;
+        background-color: rgb(108, 108, 110);
         text-align: center;
         border: 1px solid black;
         border-radius: 5px;
+        top: 100px;
     }
 
     button:focus {
@@ -71,23 +77,86 @@
     }
 
     button:hover {
-        color: burlywood;
+        color: blue;
     }
 
     .btnBx {
-        height: 200px;
-        width: 500px;
+        height: 400px;
+        width: 900px;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
     }
 
     a {
         text-decoration: none;
         color: black;
-        padding-left: 150px;
-        padding-right: 150px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+    }
+
+    .customShirt {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .submit {
+        width: 100px;
+        height: 50px;
+        position: relative;
+        top: 0;
+    }
+
+    .submit:hover {
+        color: black;
+
+    }
+
+    .imgcontainer {
+        width: 310px;
+        height: 310px;
+        position: relative;
+        text-align: center;
+        top: -303px;
+        left: 300px;
+    }
+
+    .important {
+        text-align: start;
+        color: red;
+        font-weight: bold;
+    }
+
+    .name {
+        color: white;
+        font-family: Bodoni MT;
+        width: 200px;
+        height: 50px;
+        position: absolute;
+        text-align: center;
+        font-size: 27px;
+        top: 20px;
+        right: 55px;
+    }
+
+    fieldset {
+        height: 500px;
+        border: 2px solid black;
+    }
+
+    .number {
+        color: white;
+        font-family: Bodoni MT;
+        width: 200px;
+        height: 50px;
+        position: absolute;
+        text-align: center;
+        font-size: 130px;
+        top: -70px;
+        right: 55px;
+    }
+
+    .nav {
+        width: 100px;
+        height: 100px;
     }
 }
 
