@@ -59,13 +59,23 @@
         list-style-type: none;
         background: none;
         margin-top: 1.5px;
-        width: 200px;
+        width: 270px;
         height: 200px;
         background-color: rgb(108, 108, 110);
         text-align: center;
         border: 1px solid black;
         border-radius: 5px;
         top: 100px;
+        flex-wrap: nowrap;
+    }
+    
+    .btn {
+        font-size: 20px;
+    }
+
+    .btn:hover {
+        background-color: rgba(108, 108, 108, 0.842);
+        color: rgb(0, 0, 0);
     }
 
     button:focus {
@@ -76,13 +86,9 @@
         color: burlywood;
     }
 
-    button:hover {
-        color: blue;
-    }
-
     .btnBx {
         height: 400px;
-        width: 900px;
+        width: 1100px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
