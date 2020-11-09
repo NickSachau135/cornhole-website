@@ -6,7 +6,10 @@
 
     html {
         font-size: 10px;
-        background-color: #a9a9aa;
+        background-color: #b40000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%2311d5e7' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23b40000' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23af1205' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23a91c0c' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23a42311' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%239e2916' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23992e1a' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%2393321f' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%238d3523' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23873827' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23813b2b' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%237b3d2f' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23754032' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f4236' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%2368433a' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%2361453e' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%235a4742' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23524845' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23494949' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
     }
 
     body {
@@ -27,7 +30,7 @@
         font-size: 4rem;
         text-align: center;
         color: white;
-        text-shadow: 2px 2px 10px black;
+        text-shadow: 2px 2px 10px red;
         margin-left: auto;
         margin-right: auto;
     }
@@ -51,46 +54,6 @@
     }
 
     p {
-        text-align: center;
-    }
-
-    button {
-        position: relative;
-        list-style-type: none;
-        background: none;
-        margin-top: 1.5px;
-        width: 270px;
-        height: 200px;
-        background-color: rgb(108, 108, 110);
-        text-align: center;
-        border: 1px solid black;
-        border-radius: 5px;
-        top: 100px;
-        flex-wrap: nowrap;
-    }
-    
-    .btn {
-        font-size: 20px;
-    }
-
-    .btn:hover {
-        background-color: rgba(108, 108, 108, 0.842);
-        color: rgb(0, 0, 0);
-    }
-
-    button:focus {
-        outline: black;
-    }
-
-    button a:hover {
-        color: burlywood;
-    }
-
-    .btnBx {
-        height: 400px;
-        width: 1100px;
-        margin-left: auto;
-        margin-right: auto;
         text-align: center;
     }
 
@@ -161,9 +124,58 @@
     }
 
     .nav {
-        width: 100px;
-        height: 100px;
+        width: 0;
+        height: 0;
+        top: 0;
+        font-size: 30px;
+        border: none;
+        background: none;
     }
+
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;                                  /* Style for the side navigation bar */
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #222222;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    } /* the navigation bar to move from one page to the other on the side*/
+    
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;                            /*  Style for the side navigation bar for the a elements */
+        color: white;
+        display: block;
+        transition: 0.3s;
+    } 
+    
+    .sidenav a.active {
+        background-color: red;                  /* class that makes a certain word be highlighted showing there on that page */
+        color: white;
+    }
+    .sidenav a.nonActive:hover {
+        color:red;
+    }
+    
+    .sidenav a:hover {
+        color: black;               /* effect for when you hover over element */
+    } 
+    
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;                /* element to seeting where the button to close the nav bar is */
+        margin-left: 50px;
+    }
+
+
 }
 
 @media(max-width: 530px) {
@@ -195,7 +207,7 @@
         font-size: 3rem;
         text-align: center;
         color: white;
-        text-shadow: 2px 2px 10px black;
+        text-shadow: 2px 2px 10px red;
         margin-left: auto;
         margin-right: auto;
     }

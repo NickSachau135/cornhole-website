@@ -15,7 +15,16 @@
 </head>
 <body>
 
-    <button class="nav">&#9776;</button>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a class="nonActive" href="index.html">Home</a>
+        <a class="active" href="Signup.html">Signup</a>
+        <a class="nonActive" href="Dates.html">Dates</a>
+        <a class="nonActive" href="recordings.html">Recordings</a>
+        <a class="nonActive" href="rules.html">Rules</a>
+        <a class="nonActive" href="winners.html">Winners</a>
+    </div>
+    <span class="btn-nav-open" style="font-size:30px;cursor:pointer; color: black;" onclick="openNav()">&#9776;</span>
 
     <h1>Welcome Cornhole Players</h1>
     <p>
@@ -76,3 +85,4 @@
     </div>
 
 </body>
+</html>

@@ -26,3 +26,11 @@ function srtName() {
         document.getElementById("error").innerHTML = "**Please keep number between 01 and 99**"
     }
 }
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
