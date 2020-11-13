@@ -15,7 +15,7 @@ function srtName() {
     }
 
     if (a > 9) {
-    document.getElementById("nbr").innerHTML = a;
+        document.getElementById("nbr").innerHTML = a;
     }
 
     if (a < 1) {
